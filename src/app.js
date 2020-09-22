@@ -58,16 +58,16 @@ function handleSubmit(event) {
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let celsiusTemperature = (farenheitTemperature - 32) * 5 / 9;
-  celsiusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
+  celsiusLink.classList.add("active");
+  farenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 function displayFarenheitTemperature(event) {
   event.preventDefault();
-  celsiusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
+  celsiusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(farenheitTemperature);
 }
