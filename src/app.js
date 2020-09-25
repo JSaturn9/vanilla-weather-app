@@ -66,13 +66,9 @@ for (let index = 0; index <= 5; index++) {
       <strong>${Math.round(forecast.main.temp_max)}°</strong> / ${Math.round(forecast.main.temp_min)}°
       </div>
       </div>
-        `;
- 
-      }
-  
+      `;
+      } 
 }
-
-  
 
 function search(city) {
   let apiKey = "8aeae4561f5b9cd8fde3dc22aa02472c";
@@ -117,4 +113,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let farenheitLink = document.querySelector("#farenheit-link");
 farenheitLink.addEventListener("click", displayFarenheitTemperature);
 
-search("New York");
+search("Montpelier");
